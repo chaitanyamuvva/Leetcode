@@ -6,9 +6,9 @@ class Solution:
                 dict1[i]+=1
             else:
                 dict1[i]=1
-        print(dict1)
-        print(dict1.values())
-        for i,j in dict1.items():
+        # print(dict1)
+        # print(dict1.values())
+        for j in dict1.values():
             if(j>1):
                 return True
         return False
