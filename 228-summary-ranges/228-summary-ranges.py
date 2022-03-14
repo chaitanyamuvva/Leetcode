@@ -14,7 +14,6 @@ class Solution:
                 if(count==1):
                     first = curr
                 last = nums[i+1]
-                # print(nums[i],nums[i+1],count)
                 if(nums[i+1]==nums[len(nums)-1] and(i+1)==(len(nums)-1)):
                     new_list.append(str(first)+"->"+str(last))
                     print(new_list)
@@ -24,16 +23,12 @@ class Solution:
                     print(new_list)
                     
             else:
-                # print(nums[i],nums[i+1],count)
                 if(count>1):
                     count = 0
                     new_list.append(str(first)+"->"+str(last))
-                    # print(new_list)
                     if(nums[i+1]==nums[len(nums)-1] and (i+1)==(len(nums)-1)):
                         new_list.append(str(nums[i+1]))
-                        # print(new_list)
                         break
-                    # print("print",nums[i],nums[i+1],count)
                 else:
                     count = 0
                     new_list.append(str(nums[i]))
@@ -43,8 +38,6 @@ class Solution:
                         new_list.append(str(nums[i+1]))
                         print(new_list)
                         break
-                    # print("print",nums[i],nums[i+1],count)
-                count = 0
         return new_list
                     
                                     
