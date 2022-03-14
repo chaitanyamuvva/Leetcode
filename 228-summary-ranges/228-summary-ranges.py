@@ -18,9 +18,9 @@ class Solution:
                     new_list.append(str(first)+"->"+str(last))
                     print(new_list)
                     break
-                elif(nums[i+1]!=nums[len(nums)-1] and (i+1)==(len(nums)-1)):
-                    new_list.append(str(last))
-                    print(new_list)
+                # elif(nums[i+1]!=nums[len(nums)-1] and (i+1)==(len(nums)-1)):
+                #     new_list.append(str(last))
+                #     print(new_list)
                     
             else:
                 if(count>1):
@@ -33,10 +33,8 @@ class Solution:
                     count = 0
                     new_list.append(str(nums[i]))
                     print(nums[i],nums[i+1])
-                    print(new_list)
                     if(nums[i+1]==nums[len(nums)-1] and (i+1)==(len(nums)-1)):
                         new_list.append(str(nums[i+1]))
-                        print(new_list)
                         break
         return new_list
                     
